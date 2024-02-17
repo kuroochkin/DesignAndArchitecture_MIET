@@ -40,7 +40,16 @@
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Entities\Driver.cs" />
+        <Compile Include="Entities\AbstractFactory\Abstraction\TransportFactory.cs" />
+        <Compile Include="Entities\AbstractFactory\Realization\BusFactory.cs" />
+        <Compile Include="Entities\AbstractFactory\Realization\TaxiFactory.cs" />
+        <Compile Include="Entities\Board\Abstraction\BoardAnyCar.cs" />
+        <Compile Include="Entities\Board\Realization\BoardBus.cs" />
+        <Compile Include="Entities\Board\Realization\BoardTaxi.cs" />
+        <Compile Include="Entities\Drivers\Abstraction\Driver.cs" />
+        <Compile Include="Entities\Drivers\Realization\BusDriver.cs" />
+        <Compile Include="Entities\Drivers\Realization\TaxiDriver.cs" />
+        <Compile Include="Entities\Passengers\Passenger.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
     </ItemGroup>
