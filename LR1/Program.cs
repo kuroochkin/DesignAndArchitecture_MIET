@@ -28,12 +28,11 @@ namespace LR1
 
       var boardTaxi = taxiFactory.CreateBoarder();
       boardTaxi.BoardDriver(taxiDriver);
-      
+
       foreach (var passenger in taxiPassengers)
       {
         boardTaxi.BoardPassenger(passenger);
       }
-      
     }
   }
 }

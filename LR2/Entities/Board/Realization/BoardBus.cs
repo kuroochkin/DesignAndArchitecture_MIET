@@ -1,14 +1,17 @@
 using System;
 using System.Collections.Generic;
-using LR1.Entities.Board.Abstraction;
-using LR1.Entities.Drivers.Realization;
-using LR1.Entities.Passengers;
+using LR2.Entities.Board.Abstraction;
+using LR2.Entities.Drivers.Abstraction;
+using LR2.Entities.Drivers.Realization;
+using LR2.Entities.Passengers;
 
-namespace LR1.Entities.Board.Realization
+namespace LR2.Entities.Board.Realization
 {
     public class BoardBus : BoardAnyCar
     {
         public override List<Passenger> Passengers { get; set; } = new List<Passenger>();
+        
+        public override Driver Driver { get; set; }
         public override int MaxPassengersCount { get; set; } = 30;
 
         public override bool BoardDriver(Driver driver)

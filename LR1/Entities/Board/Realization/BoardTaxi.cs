@@ -8,12 +8,12 @@ namespace LR1.Entities.Board.Realization
 {
     public class BoardTaxi : BoardAnyCar
     {
-        public override List<Passenger> Passengers { get; set; }
+        public override List<Passenger> Passengers { get; set; } = new List<Passenger>();
         public override int MaxPassengersCount { get; set; } = 4;
 
         public override bool BoardDriver(Driver driver)
         {
-            if (driver is BusDriver)
+            if (driver is TaxiDriver)
             {
                 Console.WriteLine("Водитель такси добавлен.");
                 return true;

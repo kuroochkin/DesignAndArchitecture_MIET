@@ -1,21 +1,24 @@
 using System;
 using System.Collections.Generic;
-using LR1.Entities.Board.Abstraction;
-using LR1.Entities.Drivers.Realization;
-using LR1.Entities.Passengers;
+using LR2.Entities.Board.Abstraction;
+using LR2.Entities.Drivers.Abstraction;
+using LR2.Entities.Drivers.Realization;
+using LR2.Entities.Passengers;
 
-namespace LR1.Entities.Board.Realization
+namespace LR2.Entities.Board.Realization
 {
-    public class BoardBus : BoardAnyCar
+    public class BoardTaxi : BoardAnyCar
     {
         public override List<Passenger> Passengers { get; set; } = new List<Passenger>();
-        public override int MaxPassengersCount { get; set; } = 30;
+        public override Driver Driver { get; set; }
+        public override int MaxPassengersCount { get; set; } = 4;
 
         public override bool BoardDriver(Driver driver)
         {
-            if (driver is BusDriver)
+            if (driver is TaxiDriver)
             {
-                Console.WriteLine("Водитель автобуса добавлен.");
+                Driver = driver;
+                Console.WriteLine("Водитель такси добавлен.");
                 return true;
             }
             else
@@ -30,12 +33,12 @@ namespace LR1.Entities.Board.Realization
             if (Passengers.Count < MaxPassengersCount)
             {
                 Passengers.Add(passenger);
-                Console.WriteLine($"Пассажир {passenger.Name} добавлен в автобус.");
+                Console.WriteLine($"Пассажир {passenger.Name} добавлен в такси.");
                 return true;
             }
             else
             {
-                Console.WriteLine("Пассажир не добавлен в автобус. Превышен лимит пассажиров.");
+                Console.WriteLine("Пассажир не добавлен в такси. Превышен лимит пассажиров.");
                 return false;
             }
         }
