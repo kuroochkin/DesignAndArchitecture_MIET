@@ -1,0 +1,6 @@
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR3\bin\Debug\LR3.exe
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR3\bin\Debug\LR3.pdb
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR3\obj\Debug\LR3.csproj.AssemblyReference.cache
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR3\obj\Debug\LR3.csproj.CoreCompileInputs.cache
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR3\obj\Debug\LR3.exe
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR3\obj\Debug\LR3.pdb

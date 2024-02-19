@@ -1,0 +1,6 @@
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR1.Singleton\bin\Debug\LR1.Singleton.exe
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR1.Singleton\bin\Debug\LR1.Singleton.pdb
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR1.Singleton\obj\Debug\LR1.Singleton.csproj.AssemblyReference.cache
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR1.Singleton\obj\Debug\LR1.Singleton.csproj.CoreCompileInputs.cache
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR1.Singleton\obj\Debug\LR1.Singleton.exe
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR1.Singleton\obj\Debug\LR1.Singleton.pdb
