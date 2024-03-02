@@ -33,6 +33,19 @@ namespace LR1
       {
         boardTaxi.BoardPassenger(passenger);
       }
+
+      var deliveryFactory = new DeliveryFactory();
+      var pizza = new List<Passenger>() { new Passenger() {Name = "Pizza"} };
+
+      var deliveryDriver = deliveryFactory.CreateDriver();
+      var deliveryBoard = deliveryFactory.CreateBoarder();
+
+      deliveryBoard.BoardDriver(deliveryDriver);
+      
+      foreach (var passenger in pizza)
+      {
+        deliveryBoard.BoardPassenger(passenger);
+      }
     }
   }
 }

@@ -12,7 +12,6 @@ namespace LR3.Composite
         
         public double MaxTotalWeight => MaxCountPassengers * MaxWeightForPassenger;
         
-        
         public void Add(IPassenger component)
         {
             if (_passengers.Count < MaxCountPassengers)

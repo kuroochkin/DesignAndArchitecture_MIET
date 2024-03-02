@@ -1,0 +1,14 @@
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\bin\Debug\net7.0-windows\LR4.exe
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\bin\Debug\net7.0-windows\LR4.deps.json
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\bin\Debug\net7.0-windows\LR4.runtimeconfig.json
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\bin\Debug\net7.0-windows\LR4.dll
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\bin\Debug\net7.0-windows\LR4.pdb
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\LR4.GeneratedMSBuildEditorConfig.editorconfig
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\LR4.AssemblyInfoInputs.cache
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\LR4.AssemblyInfo.cs
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\LR4.csproj.CoreCompileInputs.cache
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\LR4.dll
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\refint\LR4.dll
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\LR4.pdb
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\LR4.genruntimeconfig.cache
+D:\proga\pattern_MIET\DesignAndArchitecture_MIET\LR4\obj\Debug\net7.0-windows\ref\LR4.dll
