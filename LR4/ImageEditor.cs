@@ -41,7 +41,8 @@ public sealed class MainForm : Form
     /// </summary>
     private void InitializeBox()
     {
-        _imageProxy = new ImageProxy("D:\\proga\\pattern_MIET\\DesignAndArchitecture_MIET\\LR4\\Images\\image.jpg");
+        var realImage = new RealImage("D:\\proga\\pattern_MIET\\DesignAndArchitecture_MIET\\LR4\\Images\\image.jpg");
+        _imageProxy = new ImageProxy(realImage);
         Size imageSize = _imageProxy.GetImageSize();
         _box = new Rectangle(50, 50, imageSize.Width, imageSize.Height);
     }

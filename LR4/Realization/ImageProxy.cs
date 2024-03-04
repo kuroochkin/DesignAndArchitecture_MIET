@@ -7,16 +7,16 @@ namespace LR4.Realization;
 /// </summary>
 class ImageProxy : IImage
 {
+    /// <summary>
+    /// Объект реального изображения, которым управляет заместитель
+    /// </summary>
     private readonly RealImage _realImage;
 
     /// <summary>
     /// ImageProxy
     /// </summary>
-    /// <param name="filePath">Расположение изображения на диске</param>
-    public ImageProxy(string filePath)
-    {
-        _realImage = new RealImage(filePath);
-    }
+    /// <param name="realImage">Объект реального изображения</param>
+    public ImageProxy(RealImage realImage) => _realImage = realImage;
 
     /// <summary>
     /// Отрисовка изображения в заданном контуре
