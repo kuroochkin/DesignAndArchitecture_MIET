@@ -1,5 +1,6 @@
 using LR2.Entities.Drivers.Abstraction;
 using LR2.Entities.Passengers;
+using LR2.Entities.Passengers.Abstraction;
 
 
 namespace LR2.Builders.BoardBuilder.Abstraction

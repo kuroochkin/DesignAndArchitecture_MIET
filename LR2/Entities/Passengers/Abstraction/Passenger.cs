@@ -1,6 +1,6 @@
 using LR2.Enums;
 
-namespace LR2.Entities.Passengers
+namespace LR2.Entities.Passengers.Abstraction
 {
     public abstract class Passenger
     {

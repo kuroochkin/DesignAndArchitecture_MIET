@@ -5,7 +5,7 @@ using LR2.Builders.BoardBuilder.Abstraction;
 using LR2.Entities.Board.Realization;
 using LR2.Entities.Drivers.Abstraction;
 using LR2.Entities.Drivers.Realization;
-using LR2.Entities.Passengers;
+using LR2.Entities.Passengers.Abstraction;
 
 namespace LR2.Builders.BoardBuilder.Realization
 {
@@ -22,13 +22,11 @@ namespace LR2.Builders.BoardBuilder.Realization
         {
             if (driver is TaxiDriver && _boardTaxi.Driver == null)
             {
-                _boardTaxi.Driver = driver;
-                Console.WriteLine("Водитель такси добавлен.");
-                return true;
+                return _boardTaxi.BoardDriver(driver);
             }
             else
             {
-                Console.WriteLine("Водитель в такси не добавлен. Он уже есть.");
+                Console.WriteLine("Водитель не добавлен. Водитель уже есть либо не подходит категория.");
                 return false;
             }
         }
@@ -37,20 +35,15 @@ namespace LR2.Builders.BoardBuilder.Realization
         {
             if (_boardTaxi.Passengers.Count < _boardTaxi.MaxPassengersCount)
             {
-                _boardTaxi.Passengers.Add(passenger);
-                Console.WriteLine($"Пассажир {passenger.Name} с категорией {passenger.Category} добавлен в такси.");
-                return true;
+                return _boardTaxi.BoardPassenger(passenger);
             }
-            else
-            {
-                Console.WriteLine("Пассажир не добавлен в такси. Превышен лимит пассажиров.");
-                return false;
-            }
+
+            return false;
         }
         
         public void Go()
         {
-            if (_boardTaxi.Driver != null) 
+            if (_boardTaxi.Driver == null) 
                 Console.WriteLine("Маршрут не может начаться без водителя.");
             
             if (_boardTaxi.Passengers.Count == 0)

@@ -1,3 +1,4 @@
+using LR2.Entities.Passengers.Abstraction;
 using LR2.Enums;
 
 namespace LR2.Entities.Passengers.Realization

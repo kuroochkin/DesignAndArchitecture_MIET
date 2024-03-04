@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using LR2.Builders.PassengerBuilder.Abstraction;
-using LR2.Entities.Passengers;
+using LR2.Entities.Passengers.Abstraction;
 using LR2.Entities.Passengers.Realization;
 using LR2.Enums;
 

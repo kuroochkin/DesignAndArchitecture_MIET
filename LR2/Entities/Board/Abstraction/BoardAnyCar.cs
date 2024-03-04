@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using LR2.Entities.Drivers.Abstraction;
 using LR2.Entities.Passengers;
+using LR2.Entities.Passengers.Abstraction;
 
 namespace LR2.Entities.Board.Abstraction
 {

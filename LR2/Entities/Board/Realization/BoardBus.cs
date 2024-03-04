@@ -4,6 +4,8 @@ using LR2.Entities.Board.Abstraction;
 using LR2.Entities.Drivers.Abstraction;
 using LR2.Entities.Drivers.Realization;
 using LR2.Entities.Passengers;
+using LR2.Entities.Passengers.Abstraction;
+using LR2.Entities.Passengers.Realization;
 
 namespace LR2.Entities.Board.Realization
 {
@@ -18,27 +20,26 @@ namespace LR2.Entities.Board.Realization
         {
             if (driver is BusDriver)
             {
+                Driver = driver;
                 Console.WriteLine("Водитель автобуса добавлен.");
                 return true;
             }
-            else
-            {
-                Console.WriteLine("Водитель не добавлен. Не подходит категория.");
-                return false;
-            }
+
+            return false;
         }
 
         public override bool BoardPassenger(Passenger passenger)
-        {
-            if (Passengers.Count < MaxPassengersCount)
+        {   
+            if (Passengers.Count < MaxPassengersCount && passenger is BusPassenger) 
             {
                 Passengers.Add(passenger);
-                Console.WriteLine($"Пассажир {passenger.Name} добавлен в автобус.");
+                Console.WriteLine($"Пассажир {passenger.Name} с категорий {passenger.Category} добавлен в автобус.");
                 return true;
             }
             else
             {
-                Console.WriteLine("Пассажир не добавлен в автобус. Превышен лимит пассажиров.");
+                Console.WriteLine("Пассажир не добавлен в автобус. Превышен лимит пассажиров " +
+                                  "или не подходящий пассажир");
                 return false;
             }
         }

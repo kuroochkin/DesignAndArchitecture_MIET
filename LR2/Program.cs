@@ -14,7 +14,7 @@ namespace LR2
             var taxiPassengerBuilder = new TaxiPassengerBuilder();
             var taxiPass1 =  taxiPassengerBuilder.BuildPassenger(PassengerCategory.Child);
             var taxiPass2 = taxiPassengerBuilder.BuildPassenger(PassengerCategory.Adult);
-
+            
             var taxiDriver = new TaxiDriver();
 
             var taxiBoardBuilder = new BoardTaxiBuilder();
